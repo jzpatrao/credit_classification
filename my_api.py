@@ -2,6 +2,7 @@ import pandas as pd
 import pickle
 from fastapi import FastAPI
 from client_features import ClientFeatures
+import uvicorn
 
 with open("trained_pipeline.pkl", "rb") as f:
     model = pickle.load(f)
@@ -26,7 +27,5 @@ async def give_score(data:ClientFeatures):
     return {"risk_score": score, 
             'application_status': status}
 
-
-# Local
-# if __name__ == '__main__':
-#     uvicorn.run(app, host='127.0.0.1', port=8000)
+if __name__ == '__main__':
+    uvicorn.run(app)
