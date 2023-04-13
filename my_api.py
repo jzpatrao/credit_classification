@@ -9,9 +9,9 @@ with open("trained_pipeline.pkl", "rb") as f:
 
 app = FastAPI()
 
-@app.get('/')
-def say_hello():
-    return "Hello!"
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
     
 @app.post('/score')
 async def give_score(data:ClientFeatures):
