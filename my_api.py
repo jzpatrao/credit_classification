@@ -14,9 +14,9 @@ def custom_openapi():
     if app.openapi_schema:
         return app.openapi_schema
     openapi_schema = get_openapi(
-        title="Your Application Title",
+        title="Credit Default Prediction ",
         version="0.0.1",
-        description="Your Application Description",
+        description="Classification with Logistic Regression",
         routes=app.routes,
     )
     app.openapi_schema = openapi_schema
