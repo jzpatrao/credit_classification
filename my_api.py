@@ -16,7 +16,7 @@ def custom_openapi():
     openapi_schema = get_openapi(
         title="Credit Default Prediction ",
         version="0.0.1",
-        description="Classification with Logistic Regression",
+        description="Classification with Logistic Regression. To try it out, click 'Try it out' under '/score' ",
         routes=app.routes,
     )
     app.openapi_schema = openapi_schema
