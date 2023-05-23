@@ -1,4 +1,5 @@
 # credit_classification
+<<<<<<< HEAD
 This is a FastApi api for a classification model. 
 
 The API utilizes a logistic regression model with specific parameters and follows a preprocessing pipeline to classify loan applications. The purpose of this API is to facilitate the accurate and efficient classification of loan applications based on various features. The evaluation metrics employed include the AUC score and a custom-made error_cost_score that addresses the financial impact of false negatives and false positives.
@@ -37,6 +38,4 @@ The following libraries are used in the implementation of the Loan Application C
 - FastAPI
 
 The dataset used for this project can be found here: https://www.kaggle.com/competitions/home-credit-default-risk/overview
-=======
-This is a FastApi api for a classification model.
->>>>>>> c4969b50a4d344826792feb30b7699aaa0e61a21
+
