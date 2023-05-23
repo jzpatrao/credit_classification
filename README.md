@@ -37,3 +37,6 @@ The following libraries are used in the implementation of the Loan Application C
 - FastAPI
 
 The dataset used for this project can be found here: https://www.kaggle.com/competitions/home-credit-default-risk/overview
+=======
+This is a FastApi api for a classification model.
+>>>>>>> c4969b50a4d344826792feb30b7699aaa0e61a21
